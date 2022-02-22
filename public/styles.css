@@ -7,13 +7,16 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #f5f5f5;
-  background-image: url("cak.jpg");
+  background-color: #b1c7ba;
+  background-image: url("cland.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  color: #000000;
 }
-.h3{
-  font-family: 'Sacramento', cursive;
+h2{
+  font-family: 'Bodoni Moda', serif;;
+  color: #e52f86;
+  font-weight: 500;
 }
 .form-signin {
   width: 100%;
@@ -24,6 +27,9 @@ body {
 .form-signin .form-floating:focus-within {
   z-index: 2;
 }
+.form-control{
+  background-color: #b1c7ba;
+}
 .top {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
@@ -31,6 +37,10 @@ body {
 }
 .middle{
   border-radius: 0;
+}
+.btn{
+  background-color:#e52f86;
+  color:#ffb7cd;
 }
 .bottom {
   margin-bottom: 10px;

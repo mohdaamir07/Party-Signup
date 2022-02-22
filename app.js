@@ -27,11 +27,11 @@ app.post("/",function(req,res){
 
   const client = require("@mailchimp/mailchimp_marketing");
   client.setConfig({
-  apiKey: "9aa4c0213b302bdedbb4bc52525eecc7-us14",
+  apiKey: "b3fb88eb463a3f06b2a2301535f9bf90-us14",
   server: "us14",
   });
   const run = async () => {
-  const response = await client.lists.batchListMembers("2c96294638", jsonData);
+  const response = await client.lists.batchListMembers("7dfaf5acb0", jsonData);
   if(response.error_count===0){
     res.sendFile(__dirname+"/success.html");
   }else {
@@ -49,6 +49,6 @@ app.listen(process.env.PORT || 3000,function(){
 
 
 // API KEY
-// 9aa4c0213b302bdedbb4bc52525eecc7-us14
+// b3fb88eb463a3f06b2a2301535f9bf90-us14
 // list id
-// 2c96294638
+// 7dfaf5acb0
